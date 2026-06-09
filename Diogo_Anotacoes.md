@@ -29,8 +29,25 @@ já no proximo bloco:
             continue
         return valor
 
+Esse bloco é um bloco de validação para o numero que for digitado não ser negativo ou 0. Caso aconteça, dara um erro que ira que digitar novamente o numero. Esse numero terá que ser inteiro e positivo. 
 
+def ler_float_positivo(mensagem):
+    while True:
+        entrada = input(mensagem).replace(",", ".")
+        try:
+            valor = float(entrada)
+        except ValueError:
+            print("Erro: digite um numero valido.")
+            continue
+        if valor < 0:
+            print("Erro: nao sao permitidos valores negativos.")
+            continue
+        return valor
 
+Esse bloco é quase a mesma coisa do bloco anterior, só que ele é um validador de numero float, ou decimal. 
+
+entrada = input(mensagem).replace(",", ".")
+Essa parte em especifico funciona 
 
 
 
