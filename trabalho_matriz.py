@@ -43,4 +43,5 @@ print(faturamento[c][d])
 
 
 if __name__ == "__main__":
+    numero = ler_numero_positivo("Digite um numero: ")
     abertura()
